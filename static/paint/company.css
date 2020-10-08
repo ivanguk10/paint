@@ -1,0 +1,169 @@
+.company {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background-color: #f0f1f2;
+}
+
+
+
+.company_inner{
+    width: 100%;
+    margin: 40px auto;
+}
+
+.company_title{
+    margin-top: 50px;
+    font-size: 30px;
+    color: #333333;
+    text-align: center;
+}
+
+.company_title:after{
+    display: block;
+    content: "";
+    width: 100px;
+    height: 3px;
+    margin: 15px auto;
+    background-color: #545b75;
+}
+
+.company1{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background-color: #363b4d;
+    border-radius: 10px;
+}
+
+.company1_inner{
+    width: 100%;
+    margin: 40px auto;
+    text-align: center;
+    line-height: 2;
+}
+
+.textic{
+    text-align: center;
+    color: #ffffff;
+}
+
+.textic a{
+    color: #ffffff;
+}
+
+.about_company1{
+    margin: 60px auto;
+}
+
+.about_company2{
+    margin: 60px auto;
+}
+
+.about_company3{
+    margin: 60px auto;
+    display: none;
+}
+
+.about_our_company1{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about_our_company_item{
+    flex: 1 1 0;
+}
+
+.company_image{
+    width: 100%;
+    height: auto;
+}
+
+.company_text_item{
+    margin-left: 30px;
+    text-align: center;
+}
+
+.company_text_item1{
+    margin-right: 30px;
+    text-align: center;
+}
+
+
+@media (max-width: 1130px){
+
+}
+
+
+
+@media (max-width: 758px){
+    .about_company2{
+        display: none;
+    }
+
+    .about_company3{
+        display: block;
+    }
+
+    .about_our_company_item{
+        flex: none;
+        max-width: 540px;
+    }
+
+    .about_our_company1{
+        justify-content: center;
+    }
+
+    .company_text_item{
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+
+}
+
+@media (max-width: 604px){
+    .company_image{
+        height: 266px;
+        width: 400px;
+    }
+
+    .about_our_company_item{
+        max-width: 400px;
+    }
+
+}
+
+@media (max-width: 440px){
+    .company_image{
+        height: 200px;
+        width: 300px;
+    }
+
+    .about_our_company_item{
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 440px){
+    .company_text_item{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 352px) {
+    .company1{
+        margin-top: 70px;
+
+    }
+}
+
+@media (max-width: 338px) {
+    .company1{
+        margin-bottom: -40px;
+
+    }
+}

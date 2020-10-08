@@ -1,0 +1,202 @@
+.remont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background-color: #f0f1f2;
+}
+
+.remont_inner{
+    width: 100%;
+    margin: 40px auto;
+}
+
+
+.remont_title{
+    margin-top: 50px;
+    font-size: 30px;
+    color: #333333;
+    text-align: center;
+}
+
+.remont_title:after{
+  content: "";
+  display: block;
+  width: 120px;
+  height: 3px;
+  background-color: #545b75;
+  margin: 15px auto 50px;
+}
+
+.remont_text{
+    font-size: 16px;
+    text-align: center;
+}
+
+.wedo{
+    margin: 60px auto;
+
+}
+
+.we{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wedo_item{
+    flex: 1 1 0;
+}
+
+.wedo_image{
+    width: 100%;
+    height: auto;
+}
+
+
+.about_service_title{
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 40px;
+}
+
+.about_service_title:after{
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: #545b75;
+    margin: 15px auto 15px;
+}
+
+.about_service_content {
+    font-size: 16px;
+}
+
+.about_servcie_image{
+    margin-right: 5px;
+    margin-bottom: -5px;
+    margin-left: 58px;
+}
+
+.list_remont{
+    float: left;
+    margin: 0 -10px;
+    list-style-type: none;
+    line-height: 2.1;
+}
+
+/*Media*/
+
+/*Ноутбук*/
+
+@media (max-width: 1130px){
+    .remont_title{
+        font-size: 27px;
+    }
+}
+
+/*Планшет горизонтально*/
+
+@media (max-width: 982px){
+    .remont_title{
+        font-size: 25px;
+    }
+
+    .we{
+        justify-content: center;
+    }
+
+    .wedo_item{
+        flex: none;
+    }
+
+    .about_servcie_image{
+        margin-left: 25px;
+    }
+}
+
+/*Планшет верткально*/
+
+@media (max-width: 758px){
+    .remont_title{
+        font-size: 23px;
+    }
+
+
+}
+
+/*Мобильные телефоны*/
+
+@media (max-width: 604px){
+    .about_service_title{
+        font-size: 19px;
+    }
+
+    .wedo_image{
+        height: 266px;
+        width: 400px;
+    }
+
+    .about_servcie_image{
+        margin-left: 10px;
+    }
+
+}
+
+@media (max-width: 440px){
+    .wedo_image{
+        height: 200px;
+        width: 300px;
+    }
+
+     .about_servcie_image{
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .about_service_title{
+        font-size: 17px;
+    }
+
+    .about_servcie_image{
+        margin-left: -10px;
+    }
+
+    .remont_text{
+        font-size: 14px;
+    }
+
+    .list_remont{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 366px) {
+
+    .about_servcie_image{
+        margin-left: 10px;
+    }
+
+    .list_remont{
+        margin: 0 -30px;
+    }
+}
+
+@media (max-width: 352px) {
+    .about_service_title{
+        font-size: 16px;
+    }
+
+    .list_remont{
+
+    }
+
+    .about_servcie_image{
+        margin-left: 0px;
+    }
+}
+
+
+

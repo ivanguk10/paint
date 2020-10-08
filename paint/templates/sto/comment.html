@@ -1,0 +1,59 @@
+{% extends 'sto/base.html' %}
+{% load static %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+{% block content %}
+    <link rel="stylesheet" href="{% static 'paint/main.css' %}"/>
+    <link rel="stylesheet" href="{% static 'paint/comment.css' %}"/>
+
+
+<div class="comment">
+    <div class="container">
+        <div class="comment_inner">
+            <div class="comment_title">Отзывы</div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="wraper">
+        <div class="contact_form">
+            <form method="post">
+                {% csrf_token %}
+                 <div class="input_fields">
+                    <div class="msg">
+                        {{ form }}
+                    </div>
+                 </div>
+                <button class="btn_comm" >Оставить отзыв</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container">
+    <hr class="line">
+    <div class="comments_people">
+        <div class="comments_people_items">
+            <div class="clients_content">
+                {% for comment in comm  %}
+                    <div class="block">
+                        <img class="comments_people_photo" src="{% static 'images/logo1.png'%}"/>
+                    </div>
+                    <div class="comments_people_name">{{ comment.comment_name }}</div>
+                    <div class="comments_people_theme">{{ comment.comment_theme }}</div>
+                    <div class="comments_people_comment">{{ comment.comment_body }}</div>
+                    <hr>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="{% static 'js/main.js'%}"></script>
+
+{% endblock %}

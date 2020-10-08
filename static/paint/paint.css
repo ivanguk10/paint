@@ -1,0 +1,235 @@
+.paint{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background-color: #f0f1f2;
+}
+
+.paint_inner{
+    width: 100%;
+    margin: 40px auto;
+}
+
+
+.wepaint{
+    margin: 60px auto;
+
+}
+
+.weee{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wepaint_item{
+    flex: 1 1 0;
+}
+
+.wepaint_image{
+    width: 100%;
+    height: auto;
+}
+
+
+.list{
+    float: left;
+    margin: 0 -10px;
+    list-style-type: none;
+    line-height: 2.1;
+}
+
+
+.paint_title{
+    margin-top: 50px;
+    font-size: 30px;
+    color: #333333;
+    text-align: center;
+}
+
+.paint_title:after{
+  content: "";
+  display: block;
+  width: 120px;
+  height: 3px;
+  background-color: #545b75;
+  margin: 15px auto;
+}
+
+.paint_text{
+    font-size: 16px;
+    text-align: center;
+}
+
+
+
+.about_paint_image{
+    margin-right: 5px;
+    margin-bottom: -5px;
+    margin-left: 10px;
+}
+
+/*Media*/
+
+/*Ноутбук*/
+
+@media (max-width: 1130px){
+    .paint_title{
+        font-size: 27px;
+    }
+
+    .weee{
+        justify-content: center;
+    }
+
+    .wepaint_item{
+        flex: none;
+    }
+
+    .list{
+        margin-left: 30px;
+    }
+}
+
+/*Планшет горизонтально*/
+
+@media (max-width: 982px){
+    .paint_title{
+        font-size: 25px;
+    }
+
+
+
+}
+
+/*Планшет верткально*/
+
+@media (max-width: 758px){
+    .paint_title{
+        font-size: 23px;
+    }
+
+}
+
+/*Мобильные телефоны*/
+
+@media (max-width: 604px){
+    .paint_title{
+        font-size: 21px;
+    }
+
+    .wepaint_item{
+        flex: 1 1 0;
+
+    }
+
+    .wepaint_image{
+        height: 346px;
+        width: 520px;
+        margin: 0 25px;
+    }
+
+    .list{
+        margin-left: 20px;
+    }
+
+
+}
+
+@media (max-width: 573px){
+    .wepaint_image {
+        height: 332px;
+        width: 500px;
+    }
+
+    .list{
+        margin-left: 110px;
+    }
+}
+
+@media (max-width: 548px){
+    .wepaint_image {
+        height: 305px;
+        width: 460px;
+    }
+
+    .list{
+        margin-left: 100px;
+    }
+
+
+}
+
+@media (max-width: 509px){
+    .wepaint_image {
+        height: 280px;
+        width: 420px;
+    }
+
+    .list{
+        margin-left: 70px;
+    }
+}
+
+@media (max-width: 470px){
+    .wepaint_image {
+        height: 259px;
+        width: 390px;
+    }
+
+    .list{
+        margin-left: 60px;
+    }
+}
+
+
+
+@media (max-width: 440px){
+    .wepaint_image{
+        height: 233px;
+        width: 350px;
+    }
+
+    .list{
+        margin-left: 30px;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .paint_text{
+        font-size: 14px;
+    }
+
+    .wepaint_image {
+        height: 213px;
+        width: 320px;
+    }
+
+    .list{
+        font-size: 14px;
+    }
+
+    .list_tuning {
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 352px) {
+
+    .wepaint_image{
+        height: 160px;
+        width: 250px;
+    }
+
+    .list{
+        margin-left: 55px;
+    }
+
+    .about_paint_image{
+        margin-left: -40px;
+    }
+
+}
+

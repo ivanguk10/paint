@@ -1,0 +1,104 @@
+{% extends 'sto/base.html' %}
+{% load static %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+{% block content %}
+    <link rel="stylesheet" href="{% static 'paint/main.css' %}"/>
+    <link rel="stylesheet" href="{% static 'paint/paint.css' %}">
+    <link rel="stylesheet" href="{% static 'paint/remont.css' %}">
+
+<div class="page">
+
+<div class="paint">
+    <div class="container">
+        <div class="paint_inner">
+            <h2 class="paint_title">Покраска автомобиля</h2>
+            <p class="paint_text">Локальная или полная покраска автомобиля,
+                как и кузовной ремонт, является очень сложным и кропотливым технологическим
+                процессом, который обязательно нужно доверять только квалифицированным специалистам
+                с большим опытом работы. Наши сотрудники подберут
+                точный оттенок и выполнят окраску, используя новейшие технологии и современное
+                оборудование. </p>
+        </div>
+    </div>
+</div>
+
+
+<div class="wepaint">
+    <div class="container">
+        <div class="weee">
+            <div class="wepaint_item">
+                <img class="wepaint_image" src="{% static 'images/paint.png'%}"/>
+            </div>
+            <div class="wepaint_item">
+                <div class="about_service_title">Предоставляемые покрасочные услуги</div>
+
+                    <ul class="list">
+                        <li>
+                            <img class="about_paint_image" src="{% static 'images/paint_Ikonka.png'%}"/>
+                            Полировка авто
+                        </li>
+
+                        <li>
+                            <img class="about_paint_image" src="{% static 'images/paint_Ikonka.png'%}"/>
+                            Покраска капота
+                        </li>
+
+                        <li>
+                            <img class="about_paint_image" src="{% static 'images/paint_Ikonka.png'%}"/>
+                            Покраска бампера
+                        </li>
+
+                        <li>
+                            <img class="about_paint_image" src="{% static 'images/paint_Ikonka.png'%}"/>
+                            Покраска двери
+                        </li>
+
+                        <li>
+                            <img class="about_paint_image" src="{% static 'images/paint_Ikonka.png'%}"/>
+                            Полирвока фар
+                        </li>
+                    </ul>
+
+                    <ul class="list">
+                        <li>
+                            <img class="about_paint_image" src="{% static 'images/paint_Ikonka.png'%}"/>
+                            Покраска порогов
+                        </li>
+
+                        <li>
+                            <img class="about_paint_image" src="{% static 'images/paint_Ikonka.png'%}"/>
+                            Покраска крыши
+                        </li>
+                        <li>
+                            <img class="about_paint_image" src="{% static 'images/paint_Ikonka.png'%}"/>
+                            Покраска крыла
+                        </li>
+
+                        <li>
+                            <img class="about_paint_image" src="{% static 'images/paint_Ikonka.png'%}"/>
+                            Покраска дисков
+                        </li>
+                    </ul>
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="{% static 'js/main.js'%}"></script>
+
+
+
+
+
+{% endblock %}

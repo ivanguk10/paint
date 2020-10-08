@@ -1,0 +1,62 @@
+{% extends 'sto/base.html' %}
+{% load static %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+{% block content %}
+    <link rel="stylesheet" href="{% static 'paint/main.css' %}"/>
+    <link rel="stylesheet" href="{% static 'paint/remont.css' %}">
+
+<div class="page">
+
+<div class="remont" id="remont">
+    <div class="container">
+        <div class="remont_inner">
+            <h2 class="remont_title">Кузовной ремонт</h2>
+            <p class="remont_text">СТО Богатырево производит кузовной ремонт
+            любой сложности. Кузовной ремонт автомобиля – самый долгий
+            по времени и дорогостоящий вид ремонта.
+            Кузов всегда первым принимает удар – при неаккуратной езде,
+            парковке или в ДТП. Передовой опыт и высокотехнологичное оборудование в сочетании с
+            безупречным сервисом позволяют нам оказывать услуги на высоком уровне, предлагая действительно
+            честные цены и соблюдая оговоренные сроки работ.</p>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="wedo">
+    <div class="container">
+        <div class="we">
+            <div class="wedo_item">
+                <img class="wedo_image" src="{% static 'images/remont.png'%}"/>
+            </div>
+
+            <div class="wedo_item">
+                <div class="about_service_title">Услуги
+                    кузовного ремонта</div>
+                <div class="about_service_content">
+                    <ul class="list_remont">
+                    {% for i in service %}
+                        <li>
+                            <img class="about_servcie_image" src="{% static 'images/remont_Ikonka.png'%}"/>
+                            {{i.name}}
+                        </li>
+                    {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="{% static 'js/main.js'%}"></script>
+
+
+
+
+{% endblock %}

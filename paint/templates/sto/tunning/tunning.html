@@ -1,0 +1,63 @@
+{% extends 'sto/base.html' %}
+{% load static %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+{% block content %}
+    <link rel="stylesheet" href="{% static 'paint/main.css' %}"/>
+    <link rel="stylesheet" href="{% static 'paint/tunning.css' %}">
+    <link rel="stylesheet" href="{% static 'paint/paint.css' %}">
+    <link rel="stylesheet" href="{% static 'paint/remont.css' %}">
+    <link rel="stylesheet" href="{% static 'paint/company.css' %}">
+
+<div class="page">
+
+<div class="tuning">
+    <div class="container">
+        <div class="tuning_inner">
+            <h2 class="tuning_title">Кузовной тюнинг</h2>
+            <p class="tuning_text">Тюнинг автомобиля давно перестал быть прерогативой богатых людей.
+                Сегодня большинство владельцев машин, так или иначе, улучшают своих «жеребцов»,
+                делая их узнаваемыми и оригинальными. А для энтузиастов это и вовсе стало хобби,
+                которое обеспечивает им возможность самовыражения и реализации творческого потенциала.
+
+                Тюнинг кузова авто традиционно ориентирован на повышение эстетической привлекательности
+                транспортного средства, хотя иногда подобные мероприятия проводятся и для улучшения его
+                ходовых характеристик. </p>
+        </div>
+    </div>
+</div>
+
+<div class="wetun">
+    <div class="container">
+        <div class="ourtuning">
+            <div class="about_our_company_item">
+                <img class="wetun_image" src="{% static 'images/Tuning.png'%}"/>
+            </div>
+
+            <div class="about_our_company_item">
+                <div class="about_service_title">Услуги кузовного тюнинга</div>
+                <div class="about_tuning_content">
+                    <div class="company_text_item">СТО Богатырево производит установку
+                    Аэродинамических пакетов: HAMANN, AC-SCHNITZER
+                    и предоставляет скидку 30% на работу.</div>
+
+                    <!--<ul class="list_tuning">
+                    {% for i in tuning %}
+                        <li>
+                            <img class="about_tuning_image" src="{% static 'images/tuning_Ikonka.png'%}"/>
+                            {{i.name}}
+                        </li>
+                    {% endfor %}
+                    </ul>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="{% static 'js/main.js'%}"></script>
+
+{% endblock %}

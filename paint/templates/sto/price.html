@@ -1,0 +1,98 @@
+{% extends 'sto/base.html' %}
+{% load static %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+{% block content %}
+    <link rel="stylesheet" href="{% static 'paint/main.css' %}"/>
+    <link rel="stylesheet" href="{% static 'paint/price.css' %}"/>
+
+<div class="price">
+    <div class="container">
+        <div class="price_inner">
+            <div class="price_title">Прайслист наших услуг</div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="price_subtitle">Кузовной ремонт</div>
+</div>
+
+<div class="container">
+    <table class="content_table">
+
+        <thead>
+            <tr>
+                <th>Наименование услуги</th>
+                <th>Цена, от (руб.)</th>
+            </tr>
+        </thead>
+
+        <tbody>
+        {% for i in service %}
+            <tr>
+                <td>{{i.name}}</td>
+                <td>{{i.service_price}}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+
+    </table>
+</div>
+
+<div class="container">
+    <div class="price_subtitle">Покраска</div>
+</div>
+
+<div class="container">
+    <table class="content_table">
+
+        <thead>
+            <tr>
+                <th>Наименование услуги</th>
+                <th>Цена, от (руб.)</th>
+            </tr>
+        </thead>
+
+        <tbody>
+        {% for i in paints %}
+            <tr>
+                <td>{{i.name}}</td>
+                <td>{{i.service_price}}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+
+    </table>
+</div>
+
+<div class="container">
+    <div class="price_subtitle">Кузовной тюнинг</div>
+</div>
+
+<div class="container">
+    <table class="content_table">
+        <thead>
+            <tr>
+                <th>Наименование услуги</th>
+                <th>Цена, от (руб.)</th>
+            </tr>
+        </thead>
+
+        <tbody>
+        {% for i in tuning %}
+            <tr>
+                <td>{{i.name}}</td>
+                <td>{{i.service_price}}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+
+    </table>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="{% static 'js/main.js'%}"></script>
+
+{% endblock %}

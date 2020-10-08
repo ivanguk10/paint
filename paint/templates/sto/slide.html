@@ -1,0 +1,47 @@
+{% extends 'sto/base.html' %}
+{% load static %}
+{% block content %}
+    <link rel="stylesheet" href="{% static 'paint/slide.css' %}"/>
+
+
+    <section class="home">
+        <div class="slider">
+            <img class="slide activ" src="{% static 'images/pic1.png'%}">
+
+                    <!--<div class="caption">
+
+                    </div>-->
+
+            </img>
+
+            <img class="slide" src="{% static 'images/pic2.png'%}">
+
+                    <!--<div class="caption">
+
+                    </div>-->
+
+            </img>
+
+            <img class="slide" src="{% static 'images/pic3.png'%}">
+
+                    <!--<div class="caption">
+
+                    </div>-->
+
+            </img>
+        </div>
+        <div class="controls">
+            <div class="prev"><</div>
+            <div class="next">></div>
+        </div>
+
+        <div class="indicator">
+
+        </div>
+
+    </section>
+
+<script src="{% static 'js/slide.js'%}"></script>
+
+
+{% endblock %}

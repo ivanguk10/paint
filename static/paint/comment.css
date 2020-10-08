@@ -1,0 +1,213 @@
+.comment{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background-color: #f0f1f2;
+}
+
+.comment_inner{
+    width: 100%;
+    margin: 40px auto;
+}
+
+.comment_title{
+    font-size: 30px;
+    color: #333333;
+    text-align: center;
+}
+
+.comment_title:after{
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: #545b75;
+    margin: 15px auto 50px;
+}
+
+.btn_comm{
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 0 130px 0;
+    font-size: 18px;
+    cursor: pointer;
+    color: #ffffff;
+    background: none;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn_comm:hover{
+    color: #8f9fb3;
+    background-color: #ffffff;
+}
+
+.btn_comm:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 190%;
+    background-color: #8f9fb3;
+    z-index: -1;
+    transition: 0.8s;
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+}
+
+.btn_comm:hover:before{
+    height: 0;
+}
+
+.wraper{
+    padding: 20px 0;
+    width: 100%;
+}
+
+.contact_form{
+    max-width: 450px;
+    background: #8f9fb3;
+    padding: 10px 30px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.input_fields{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+}
+
+.input_fields, .msg{
+    width: 100%;
+}
+
+.input_fields .input,
+.msg textarea{
+    margin: 5px 0;
+    background: #8f9fb3;
+    border: 0;
+    border-bottom: 2px solid #ffffff;
+    padding: 10px;
+    color: #ffffff;
+    width: 100%;
+}
+
+.msg textarea{
+    height: 100px;
+}
+
+::-webkit-input-placeholder{
+    color: #ffffff;
+}
+
+::-ms-input-placeholder{
+    color: #ffffff;
+}
+
+.line{
+    border: 1px dashed #515357;
+}
+
+.comments_people{
+
+    margin-top: 40px;
+}
+
+.comments_people_items{
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.comments_people_items hr{
+    margin-bottom: 30px;
+    border: 1px dashed #515357;
+
+}
+
+.comments_people_photo{
+    height: 110px;
+    width: 110px;
+
+    border-radius: 50%;
+
+    top: 0;
+    left: 40px;
+    z-index: 1;
+}
+
+.comments_people_name{
+
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #333333;
+  text-transform: uppercase;
+
+}
+
+.comments_people_theme{
+    font-size: 14px;
+    color: #333333;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.comments_people_comment{
+    font-size: 15px;
+    color: #999999;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.comments_people_comment:before{
+
+  display: block;
+  content: "";
+  width: 60px;
+  height: 3px;
+  background-color: #e60e12;
+  margin: 15px 140px;
+}
+
+.block{
+    float: left;
+    padding-right: 30px;
+    padding-left: -150px;
+}
+
+@media (max-width: 1130px) {
+}
+
+@media (max-width: 758px) {
+}
+
+@media (max-width: 604px) {
+    .comments_people_photo{
+        height: 90px;
+        width: 90px;
+    }
+
+    .comments_people_comment:before {
+          margin: 15px 120px;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+
+    .input_fields .input,
+    .msg textarea{
+    }
+
+    .btn_comm{
+        font-size: 15px;
+        margin: auto;
+    }
+}
+
+@media (max-width: 400px) {
+}
