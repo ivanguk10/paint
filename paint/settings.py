@@ -32,7 +32,7 @@ sys.path.insert(0, os.path.join(PROJECT_ROOT, 'apps'))
 SECRET_KEY = 'bnp2jp+n(u-8y5hp^0of_9!ice0*vizp-qva7(*-7n%1+z&5#='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['35.205.233.37 ']
 
