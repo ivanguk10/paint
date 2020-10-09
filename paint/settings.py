@@ -14,9 +14,12 @@ import os
 import sys
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+from django.views import static
+
 from paint.apps import servcie
 from paint.apps.servcie import apps
 from paint.apps.servcie.apps import ServcieConfig
+
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -31,7 +34,7 @@ SECRET_KEY = 'bnp2jp+n(u-8y5hp^0of_9!ice0*vizp-qva7(*-7n%1+z&5#='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['34.76.13.17']
+ALLOWED_HOSTS = ['35.205.233.37 ']
 
 
 # Application definition
@@ -116,6 +119,9 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
 
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+
+STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
