@@ -31,7 +31,7 @@ SECRET_KEY = 'bnp2jp+n(u-8y5hp^0of_9!ice0*vizp-qva7(*-7n%1+z&5#='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['34.76.13.17']
+ALLOWED_HOSTS = ['35.205.233.37 ']
 
 
 # Application definition
