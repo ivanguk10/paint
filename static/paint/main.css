@@ -33,6 +33,8 @@ h1, h2, h3, h4, h5, h6{
   font-weight: bold;
   float: left;
   font-family: Monserat;
+  text-decoration: none;
+  color: black;
 }
 
 
@@ -647,11 +649,10 @@ h1, h2, h3, h4, h5, h6{
 
 .about_title a{
   color: inherit;
-  text-decoration: none;
 }
 
 .about_title a:hover{
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .about_title:after{

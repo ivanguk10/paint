@@ -34,7 +34,7 @@ SECRET_KEY = 'bnp2jp+n(u-8y5hp^0of_9!ice0*vizp-qva7(*-7n%1+z&5#='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['35.205.233.37 ']
+ALLOWED_HOSTS = ['127.0.0.1']
 
 
 # Application definition
@@ -113,7 +113,9 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-STATIC_URL = '/static/'
+STATIC_URL = '/paint/static/'
+STATIC_ROOT = '/home/ivanguk/PycharmProjects/paint'
+
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
@@ -121,7 +123,6 @@ STATICFILES_DIRS = [
 
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 
-STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
