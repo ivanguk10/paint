@@ -1,3 +1,5 @@
+LICENSE
+MANIFEST.in
 README.rst
 netifaces.c
 setup.cfg

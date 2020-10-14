@@ -1,17 +1,27 @@
 Metadata-Version: 1.1
 Name: netifaces
-Version: 0.10.4
+Version: 0.10.9
 Summary: Portable network interface information.
-Home-page: https://bitbucket.org/al45tair/netifaces
+Home-page: https://github.com/al45tair/netifaces
 Author: Alastair Houghton
 Author-email: alastair@alastairs-place.net
 License: MIT License
-Description: netifaces 0.10.4
+Description: netifaces 0.10.8
         ================
         
-        .. image:: https://drone.io/bitbucket.org/al45tair/netifaces/status.png
-           :target: https://drone.io/bitbucket.org/al45tair/netifaces/latest
-           :alt: Build Status
+        +-------------+------------------+
+        | Linux/macOS | |BuildStatus|    |
+        +-------------+------------------+
+        | Windows     | |WinBuildStatus| |
+        +-------------+------------------+
+        
+        .. |BuildStatus| image:: https://travis-ci.org/al45tair/netifaces.svg?branch=master
+           :target: https://travis-ci.org/al45tair/dmgbuild
+           :alt: Build Status (Linux/Mac)
+        
+        .. |WinBuildStatus| image:: https://ci.appveyor.com/api/projects/status/3ctn1bl0aigpfjoo/branch/master?svg=true
+           :target: https://ci.appveyor.com/project/al45tair/netifaces/branch/master
+           :alt: Build Status (Windows)
         
         1. What is this?
         ----------------
@@ -32,9 +42,12 @@ Description: netifaces 0.10.4
         
         First you need to install it, which you can do by typing::
         
-          tar xvzf netifaces-0.10.4.tar.gz
-          cd netifaces-0.10.4
+          tar xvzf netifaces-0.10.8.tar.gz
+          cd netifaces-0.10.8
           python setup.py install
+        
+        **Note that you will need the relevant developer tools for your platform**,
+        as netifaces is written in C and installing this way will compile the extension.
         
         Once that's done, you'll need to start Python and do something like the
         following::
@@ -165,39 +178,19 @@ Description: netifaces 0.10.4
         It gets regular testing on OS X, Linux and Windows.  It has also been used
         successfully on Solaris, and it's expected to work properly on other UNIX-like
         systems as well.  If you are running something that is not supported, and
-        wish to contribute a patch, please use BitBucket to send a pull request.
+        wish to contribute a patch, please use Github to send a pull request.
         
         4. What license is this under?
         ------------------------------
         
-        It's an MIT-style license.  Here goes:
-        
-        Copyright (c) 2007-2014 Alastair Houghton
-        
-        Permission is hereby granted, free of charge, to any person obtaining a copy
-        of this software and associated documentation files (the "Software"), to deal
-        in the Software without restriction, including without limitation the rights
-        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-        copies of the Software, and to permit persons to whom the Software is
-        furnished to do so, subject to the following conditions:
-        
-        The above copyright notice and this permission notice shall be included in all
-        copies or substantial portions of the Software.
-        
-        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-        SOFTWARE.
+        It's an MIT-style license. See `LICENSE <./LICENSE>`_.
         
         5. Why the jump to 0.10.0?
         --------------------------
         
         Because someone released a fork of netifaces with the version 0.9.0.
-        Hopefully skipping the version number should remove any confusion.  In 
-        addition starting with 0.10.0 Python 3 is now supported and other 
+        Hopefully skipping the version number should remove any confusion.  In
+        addition starting with 0.10.0 Python 3 is now supported and other
         features/bugfixes have been included as well.  See the CHANGELOG for a
         more complete list of changes.
         
@@ -212,3 +205,6 @@ Classifier: Programming Language :: Python :: 2.5
 Classifier: Programming Language :: Python :: 2.6
 Classifier: Programming Language :: Python :: 2.7
 Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
